@@ -39,6 +39,38 @@
 		<constructor-arg value="103" type="double"></constructor-arg>
 	</bean>
 
+	<!-- Inner bean -->
+
+	<bean id="employee4" class="com.cg.spring.core.demo.aug3.Employee">
+		<property name="eid">
+			<value>104</value>
+		</property>
+		<property name="ename">
+			<value>Ponu</value>
+		</property>
+		<property name="salary">
+			<value>40.5</value>
+		</property>
+		<property name="department">
+			<bean id="department"
+				class="com.cg.spring.core.demo.aug3.Department">
+				<property name="did" value="20"></property>
+				<property name="dname" value="Marketing"></property>
+				<property name="functions">
+					<list>
+						<value>Sales</value>
+						<value>Promotions</value>
+						<value>Customer Care</value>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+
+
+
+
 
 
 </beans>

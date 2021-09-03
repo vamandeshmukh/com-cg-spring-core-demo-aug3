@@ -31,6 +31,9 @@ public class App {
 		Employee obj3 = context.getBean("employee3", Employee.class);
 		System.out.println(obj3.toString());
 
+		Employee obj4 = context.getBean("employee4", Employee.class);
+		System.out.println(obj4.toString());
+
 		System.out.println("End");
 
 	}
