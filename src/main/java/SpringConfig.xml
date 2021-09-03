@@ -3,7 +3,20 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
+<!-- Dependency injection -->
+
+<!-- Property injection / setter injection-->
+
 	<bean id="employee" class="com.cg.spring.core.demo.aug3.Employee">
+		<property name="eid">
+			<value>101</value>
+		</property>
+		<property name="ename">
+			<value>Sonu</value>
+		</property>
+		<property name="salary">
+			<value>10.5</value>
+		</property>
 	</bean>
 
 </beans>
