@@ -22,8 +22,9 @@ public class App {
 //		Employee employee = hey Spring container, get me the object;
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
-		Employee employee = context.getBean("employee", Employee.class);
-		employee.work();
+
+		Employee obj = context.getBean("employee", Employee.class);
+		obj.work();
 
 		System.out.println("End");
 
