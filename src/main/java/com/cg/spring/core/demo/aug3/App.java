@@ -22,23 +22,14 @@ public class App {
 //		Employee employee = hey Spring container, get me the object;
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
-//		Employee obj = context.getBean("employee", Employee.class);
 
-		Employee obj = context.getBean(Employee.class);
-//		Employee obj2 = context.getBean(Employee.class);
-//
-//		System.out.println(obj.hashCode());
-//		System.out.println(obj2.hashCode());
-//		System.out.println(obj.equals(obj2));
-//
-//		Employee e1 = new Employee();
-//		Employee e2 = new Employee();		
-//		System.out.println(e1.hashCode());
-//		System.out.println(e2.hashCode());
-
+//		Employee obj = context.getBean(Employee.class);
+		Employee obj = context.getBean("employee2", Employee.class);
 //		obj.work();
-
 		System.out.println(obj.toString());
+
+		Employee obj3 = context.getBean("employee3", Employee.class);
+		System.out.println(obj3.toString());
 
 		System.out.println("End");
 

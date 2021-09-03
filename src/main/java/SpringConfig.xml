@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
-<!-- Dependency injection -->
+	<!-- Dependency injection -->
 
-<!-- Property injection / setter injection-->
+	<!-- Property injection / setter injection -->
 
 	<bean id="employee" class="com.cg.spring.core.demo.aug3.Employee">
 		<property name="eid">
@@ -18,6 +18,28 @@
 			<value>10.5</value>
 		</property>
 	</bean>
+
+	<bean id="employee2" class="com.cg.spring.core.demo.aug3.Employee">
+		<property name="eid">
+			<value>102</value>
+		</property>
+		<property name="ename">
+			<value>Monu</value>
+		</property>
+		<property name="salary">
+			<value>20.5</value>
+		</property>
+	</bean>
+
+	<!-- Constructor injection -->
+
+	<bean id="employee3" class="com.cg.spring.core.demo.aug3.Employee">
+		<constructor-arg value="103" type="int"></constructor-arg>
+		<constructor-arg value="Tonu" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="103" type="double"></constructor-arg>
+	</bean>
+
+
 
 </beans>
 
